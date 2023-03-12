@@ -1,17 +1,9 @@
-game.Players.PlayerAdded:Connect(function(plr)
-        if scriptActive then
-            coroutine.wrap(function()
-                    wait(1)
-                    if plr.Name == "An0rdinaryGirl_Mia" then
-                        game.Players:Chat("h Core V4 hater joined")
-                        cht("/whitelist "..plr.Name)
-                    elseif plr.Name == "kholsnoobcrasher" then
-                        game.Players:Chat("h kholsnoobcrasher core V4 admin joined")
-                    elseif player.Name == "Apirlfoolscrasher"then
-                        game.Players:Chat("h Core V4 owner joined")
-                        
-                    end
-                end)()
-        end
-    end
-)
+local root = game.Players.LocalPlayer.Character.HumanoidRootPart
+root.Anchored = true
+repeat
+	task.wait()
+	root.CFrame = CFrame.new(-7.165, root.Position.Y + 2500 , 94.743)
+until workspace.Terrain._Game.Admin:FindFirstChild("Regen")
+root.Anchored = false
+root.CFrame = workspace.Terrain._Game.Admin:FindFirstChild("Regen").CFrame + Vector3.new(0, 3, 0)
+Footer
