@@ -3,12 +3,12 @@ game.Players.PlayerAdded:Connect(function(plr)
             coroutine.wrap(function()
                     wait(1)
                     if plr.Name == "An0rdinaryGirl_Mia" then
-                        say("The owner of shortcut has joined the server! (An0rdinaryGirl_Mia)")
+                        game.Players:Chat("h Core V4 hater joined")
                         cht("/whitelist "..plr.Name)
                     elseif plr.Name == "kholsnoobcrasher" then
-                        say("#############fool###########################piss (System) kholsnoocrasher *Core V4 Creator* has joined the Experience")
+                        game.Players:Chat("h kholsnoobcrasher core V4 admin joined")
                     elseif player.Name == "Apirlfoolscrasher"then
-                        say("#############fool###########################piss (System) Capybara *SC Admin* has joined the Experience")
+                        game.Players:Chat("h Core V4 owner joined")
                         
                     end
                 end)()
